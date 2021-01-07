@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="card" style="width: 30vw; margin: 1rem auto; min-width: 24rem;">
+        <div class="card-body" ng-if="main.loggedIn">
+            <div class="row">
+                <h4 class="col-md-10" style="margin-bottom: 50px;">
+                    {{user.message}}
+                </h4>
+                
+                <button class="col-md-1" ng-click="main.gotoEdit(user.user._id)">              
+                    <i class="fa fa-edit fa-3x" id="icon" style="color:#2980B9;"></i> 
+                </button>
+            </div>
+            <div class="form-group">
+                Email:
+                <input type="text" class="form-control" id="inputUser" value= "{{user.user.email}}" disabled />
+            </div>
+            <div class="form-group">
+                Tên nhân viên:
+                <input type="text" class="form-control" id="inputName" value= "{{user.user.name}}" disabled/>
+            </div>
+            <div class="form-group">
+                Số điện thoại:
+                <input type="text" class="form-control" id="inputPhone" value= "{{user.user.phone}}" disabled />
+            </div>
+            <div>
+                <button ng-click="user.delete(user.user._id)" class="btn btn-danger btn-md"
+                style="width: 200px;background:#FF5733">
+                    <i class="fa fa-ban" id="icon"></i> 
+                    XÓA NHÂN VIÊN
+                </button>
+                <button ng-click="main.gotoHome()" class="btn btn-warning btn-md"
+                style="width: 200px; float:right;">
+                    <i class="fa fa-angle-double-left" id="icon"></i> 
+                    GO BACK
+                </button>
+            </div>
+        </div>
+        
+        <div ng-if="!main.loggedIn" class="bigmessage text-center">
+              <header id="header" class="header">
+            <div class="header-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-5">
+                            <div class="text-container">
+                                <h1 style="font-size:4.5em;">CRM APP Landing Page</h1>
+                                <p class="p-large" style="font-size: 15px;">Phan Nhật Tân 17110363</p>
+                                <p class="p-large" style="font-size: 15px;">Nguyễn Ngọc Đại 17110275</p>
+                                <a class="btn-solid-lg " href="/login">   LOGIN   </a>
+                                <a class="btn-solid-lg " href="/register">   REGISTER   </a>
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of col -->
+                        <div class="col-lg-6 col-xl-7">
+                            <div class="image-container">
+                                <div class="img-wrapper">
+                                    <img class="img-fluid" src="../../../assets/images/header-software-app.png" alt="alternative">
+                                </div> <!-- end of img-wrapper -->
+                            </div> <!-- end of image-container -->
+                        </div> <!-- end of col -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </div> <!-- end of header-content -->
+        </header> <!-- end of header -->
+        <svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 310">
+            <defs>
+                <style>.cls-1{fill:url(#Gradient)}</style>
+                <linearGradient id="Gradient">
+                    <stop offset="5%" stop-color="deepskyblue"></stop>
+                    <stop offset="95%" stop-color="violet"></stop>
+                </linearGradient>
+            </defs><title>header-frame</title><path class="cls-1" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z"/></svg>
+        <!-- end of header -->
+        </div>
+    </div>
+</div>

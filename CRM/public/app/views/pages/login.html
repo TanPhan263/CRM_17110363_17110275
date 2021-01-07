@@ -1,0 +1,67 @@
+<div class="limiter" >
+<div class="container-login100" style="background-image: url('../../../assets/images/bg-01.jpg');" >
+    <div ng-if="!main.loggedIn"  class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33" >
+            <div class="alert alert-danger" ng-show="login.error">
+                {{ login.error }}
+            </div>
+            <div class="alert alert-danger" ng-show="facebook.errorMsg">
+                {{ facebook.errorMsg }}
+            </div>
+        <div class="container-login100">
+            <span class="login100-form-title p-b-20">
+                Login
+            </span>
+            <form ng-submit="login.doLogin(login.loginData.username,login.loginData.password)" class="login100-form validate-form flex-sb flex-w">
+                <a ng-click="main.facebook()" class="btn-face m-b-20" style="color: white;">
+                    <i class="fa fa-facebook-official" style="color: white;"></i>
+                    Facebook
+                </a>
+
+                <a ng-click="main.google()" class="btn-google m-b-20">
+                    <img src="assets/images/icons/icon-google.png" alt="GOOGLE">
+                    Google
+                </a>
+                
+                <div class="p-t-31 p-b-9">
+                    <span class="txt1">
+                        Username
+                    </span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate = "Username is required">
+                    <input class="input100" type="text"  name="username" ng-model="login.loginData.username">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="p-t-13 p-b-9">
+                    <span class="txt1">
+                        Password
+                    </span>
+                </div>
+                <div class="wrap-input100 validate-input" data-validate = "Password is required">
+                    <input class="input100" type="password" name="pass" ng-model="login.loginData.password">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="container-login100-form-btn m-t-17">
+                <button type="submit" class="login100-form-btn" style="font-size: 20px;margin-top: 30px; border-radius: 10px; height: 70px;">
+                    <span>Login</span>
+                </button>
+            </form>
+            <!-- <button ng-click="main.goRegister()" 
+            class="login100-form-btn" style="font-size: 20px; border-radius: 10px; height: 70px;"
+            >Register</button> -->
+            <div class="w-full text-center p-t-55">
+                <span class="txt2">
+                    Not a member?
+                </span>
+
+                <a href="#" class="txt2 bo1" ng-click="main.goRegister()">
+                    Sign up now
+                </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div ng-if="main.loggedIn" class="bigmessage text-center">
+        <h3>BẠN ĐÃ ĐĂNG NHẬP</h3> <a href="/"> về trang chủ</a>
+    </div>
+</div>
+</div>

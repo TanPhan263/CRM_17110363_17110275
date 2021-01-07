@@ -1,0 +1,158 @@
+.header {
+	background-image: linear-gradient(to right,deepskyblue , 	violet);
+}
+
+.header .header-content {
+	padding-top: 8rem;
+	padding-bottom: 4rem;
+	text-align: center;
+}
+
+.header .text-container {
+	margin-bottom: 3rem;
+}
+
+.header h1 {
+	margin-bottom: 1rem;
+	color: #fff;
+	font-size: 2.5rem;
+	line-height: 3rem;
+}
+
+.header .p-large {
+	margin-bottom: 2rem;
+	color: #f3f7fd;
+}
+
+.header .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.125rem;
+	margin-left: 0.5rem;
+	border-color: #f3f7fd;
+	background-color: #f3f7fd;
+	color: deepskyblue;
+}
+
+.header .btn-solid-lg:hover {
+	background: transparent;
+	color: #f3f7fd;
+}
+.header .btn-solid-lg {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.header .btn-outline-lg {
+	border-color: #f3f7fd;
+	color: #f3f7fd;
+}
+
+.header .btn-outline-lg:hover {
+	background-color: #f3f7fd;
+	color: deepskyblue;
+}
+
+.header-frame {
+	margin-top: -1px; /* To remove white margin in FF */
+	width: 100%;
+	height: 2.25rem;
+}
+.btn-solid-lg {
+	display: inline-block;
+	padding: 1.375rem 2.625rem 1.375rem 2.625rem;
+	border: 0.125rem solid deepskyblue;
+	border-radius: 2rem;
+	background-color: deepskyblue;
+	color: #fff;
+	font: 700 0.875rem/0 "Open Sans", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+.btn-solid-lg:hover {
+	background-color: transparent;
+	color: deepskyblue;
+	text-decoration: none;
+}
+.header .text-container {
+	margin-bottom: 4rem;
+}
+
+.header h1 {
+	font-size: 3.5rem;
+	line-height: 4.125rem;
+}
+
+.header .btn-solid-lg {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.header-frame {
+	height: 5.5rem;
+}
+.header .header-content {
+	text-align: left;
+}
+
+.header .text-container {
+	margin-top: 4rem;
+	margin-bottom: 0;
+}
+
+.header .image-container {
+	position: relative;
+	margin-top: 3rem;
+}
+
+.header .image-container .img-wrapper {
+	position: absolute;
+	display: block;
+	width: 470px;
+}
+
+.header-frame {
+	height: 8rem;
+}
+.header .header-content {
+	padding-top: 11rem;
+	padding-bottom: 5rem;
+}
+
+.header .text-container {
+	margin-top: 5.5rem;
+	margin-right: 0.5rem;
+}
+
+.header .image-container {
+	margin-top: 1rem;
+	margin-left: 1.5rem;
+}
+
+.header .image-container .img-wrapper {
+	width: 630px;
+}
+
+.header-frame {
+	height: 9.375rem;
+}
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+  }
+  .header .text-container {
+	margin-bottom: 4rem;
+}
+
+.header h1 {
+	font-size: 3.5rem;
+	line-height: 4.125rem;
+}
+
+.header .btn-solid-lg {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.header-frame {
+	height: 5.5rem;
+}
